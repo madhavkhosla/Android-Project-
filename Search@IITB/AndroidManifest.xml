@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.testapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="17" />
+    
+   
+        <permission
+        android:name="com.example.testapp.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+  
+    <uses-permission android:name="com.example.testapp.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+   
+    
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        
+        
+         
+        
+        
+            <activity
+            android:name="com.example.testapp.Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+
+        
+          <activity 
+         android:name="com.example.testapp.Menu" 
+             android:label="@string/app_name" > 
+<!--            <intent-filter>  -->
+<!--                  <action android:name="com.example.testapp.MENU" />  -->
+
+<!--                  <category android:name="android.intent.category.DEFAULT" />  -->
+<!--              </intent-filter>  -->
+         </activity> 
+        
+  		 <activity 
+         android:name="com.example.testapp.Tabs" 
+             android:label="@string/app_name" 
+                android:windowSoftInputMode="stateHidden"
+             > 
+       
+         </activity> 
+      
+  		 
+  		 
+  		 <activity 
+         android:name="com.example.testapp.SQLiteExample" 
+             android:label="@string/app_name" 
+                android:windowSoftInputMode="stateHidden"> 
+       
+         </activity>
+         
+  		 
+          <activity 
+         android:name="com.example.testapp.SQLView" 
+             android:label="@string/app_name" > 
+           <intent-filter> 
+                 <action android:name="com.example.testapp.SQLVIEW" /> 
+
+                 <category android:name="android.intent.category.DEFAULT" /> 
+             </intent-filter> 
+         </activity> 
+          <activity 
+         android:name="com.example.testapp.AdminPage" 
+             android:label="@string/app_name" > 
+           <intent-filter> 
+                 <action android:name="com.example.testapp.ADMINPAGE" /> 
+
+                 <category android:name="android.intent.category.DEFAULT" /> 
+             </intent-filter> 
+         </activity> 
+           <activity
+            android:name="com.example.testapp.TestExternalDatabase"
+            android:label="@string/app_name" >
+             <intent-filter> 
+                 <action android:name="com.example.testapp.TESTEXTERNALDATABASE" /> 
+
+                 <category android:name="android.intent.category.DEFAULT" /> 
+             </intent-filter> 
+        </activity>
+         <activity
+            android:name="com.example.testapp.UserAuth"
+            android:label="@string/app_name" >
+              <intent-filter> 
+                 <action android:name="com.example.testapp.USERAUTH" /> 
+
+                 <category android:name="android.intent.category.DEFAULT" /> 
+             </intent-filter> 
+        </activity>
+        
+           <activity
+            android:name="com.example.testapp.SharedPrefs"
+            android:label="@string/app_name" >
+              <intent-filter> 
+                 <action android:name="com.example.testapp.SHAREDPREFS" /> 
+
+                 <category android:name="android.intent.category.DEFAULT" /> 
+             </intent-filter> 
+        </activity>
+         
+       <activity
+            android:name="com.example.testapp.SimpleBrowser"
+            android:label="@string/app_name" >
+            
+        </activity>
+        
+          <activity 
+         android:name="com.example.testapp.ReadWebpageAsyncTask" 
+             android:label="@string/app_name" > 
+           <intent-filter> 
+                 <action android:name="com.example.testapp.READWEBPAGEASYNCTASK" /> 
+
+                 <category android:name="android.intent.category.DEFAULT" /> 
+             </intent-filter> 
+         </activity> 
+     
+         
+ 		<!-- <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAyoXiQYGa4ZsKbk_5IzjJAOgYt7z9Hjs0" /> -->
+        
+		<meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBvaRFSuCd0xyNXylo2yz5AGoB1yyZtl-g" /> 		
+ 			
+
+    </application>
+
+</manifest>

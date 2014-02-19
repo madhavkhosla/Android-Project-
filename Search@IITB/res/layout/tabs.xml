@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+       android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" 
+     	android:background="@drawable/splash_theme" 
+     	   >
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Result" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+               
+                
+                
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                     android:orientation="vertical" 
+                       >
+                       
+                    <ScrollView 
+                        android:layout_height="match_parent"
+              android:layout_width="match_parent">
+                  
+          <LinearLayout 
+              android:layout_height="match_parent"
+              android:layout_width="match_parent"
+              android:orientation="vertical">
+                       
+                    
+                       <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                  
+                        android:orientation="horizontal" >
+                        
+                        <TextView
+                          android:id="@+id/tnID"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="ID:"
+                          android:layout_weight="85"
+                           />
+
+                    <EditText
+                        android:id="@+id/etID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10" 
+                               android:layout_weight="15">
+     
+                        <requestFocus />
+                    </EditText>
+                        
+                    </LinearLayout>   
+                    
+                    
+                    
+                    
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                  
+                        android:orientation="horizontal" >
+                        
+                        <TextView
+                          android:id="@+id/tnName"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="Name:"
+                          android:layout_weight="85"
+                           />
+
+                      
+
+                    <EditText
+                        android:id="@+id/etName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10" 
+                        android:layout_weight="15"
+                        >
+
+<!--                         <requestFocus /> -->
+                    </EditText>
+                        
+                    </LinearLayout>     
+
+                       <LinearLayout
+                           android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                           
+                           android:orientation="horizontal" >
+
+                                <TextView
+                          android:id="@+id/tnSal"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="Last Name"
+                          android:layout_weight="85"
+                           />
+
+                    <EditText
+                        android:id="@+id/etSal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10" 
+                        android:layout_weight="15"
+                        >
+
+<!--                         <requestFocus /> -->
+                    </EditText>
+                       </LinearLayout>      
+                       
+                       
+                       <LinearLayout
+                           android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                           
+                           android:orientation="horizontal" >
+
+                                <TextView
+                          android:id="@+id/tnAddress"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="Address"
+                          android:layout_weight="85"
+                           />
+
+                    <EditText
+                        android:id="@+id/etAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10" 
+                        android:layout_weight="15"
+                        >
+
+<!--                         <requestFocus /> -->
+                    </EditText>
+                       </LinearLayout>  
+                       
+                       <LinearLayout
+                           android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                           
+                           android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/tnType"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Person Type"
+                                   />
+
+                    <EditText
+                        android:id="@+id/etType"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10" 
+                             android:layout_weight="20">
+     
+<!--                         <requestFocus /> -->
+                    </EditText>
+                       </LinearLayout>  
+                       
+                       
+                       <LinearLayout
+                           android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                           
+                           android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/tnGender"
+                                    android:layout_width="78dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Gender" />
+
+                    <EditText
+                        android:id="@+id/etGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10" 
+                           android:layout_weight="15">
+
+<!--                         <requestFocus /> -->
+                    </EditText>
+                       </LinearLayout>  
+                       
+                       <LinearLayout
+                           android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                           
+                           android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/tnEmail"
+                                    android:layout_width="70dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Email" />
+
+                    <EditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10" 
+                           android:layout_weight="15">
+
+<!--                         <requestFocus /> -->
+                    </EditText>
+                       </LinearLayout>
+                       
+                       
+                       <LinearLayout
+                           android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                           
+                           android:orientation="horizontal" >
+
+                                <TextView
+                          android:id="@+id/tnDob"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="DOB"
+                          android:layout_weight="85"
+                           />
+
+                    <EditText
+                        android:id="@+id/etDob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10" 
+                         android:layout_weight="15">
+
+<!--                         <requestFocus /> -->
+                    </EditText>
+                       </LinearLayout>
+                       
+                       
+                       <LinearLayout
+                           android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                           
+                           android:orientation="horizontal" >
+
+                                <TextView
+                          android:id="@+id/tnValid"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="Valid Upto"
+                          android:layout_weight="85"
+                           />
+
+                    <EditText
+                        android:id="@+id/etValid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10" 
+                        android:layout_weight="15"
+                        >
+
+<!--                         <requestFocus /> -->
+                    </EditText>
+                       </LinearLayout>
+                       
+                       
+                       <LinearLayout
+                           android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                           
+                           android:orientation="horizontal" >
+
+                                <TextView
+                          android:id="@+id/tnInt"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="Tele Internal"
+                          android:layout_weight="80"
+                           />
+
+                    <EditText
+                        android:id="@+id/etInt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10" 
+                        android:layout_weight="20"
+                        >
+
+<!--                         <requestFocus /> -->
+                    </EditText>
+                       </LinearLayout>
+                       
+                       <LinearLayout
+                           android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                           
+                           android:orientation="horizontal" >
+
+                                <TextView
+                          android:id="@+id/tnExt"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="Tele External"
+                          android:layout_weight="80"
+                           />
+
+                    <EditText
+                        android:id="@+id/etExt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10" 
+                        android:layout_weight="20"
+                        >
+
+<!--                         <requestFocus /> -->
+                    </EditText>
+                       </LinearLayout>
+                       
+                       
+                       <LinearLayout
+                           android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                           
+                           android:orientation="horizontal" >
+
+                                <TextView
+                          android:id="@+id/tnDept"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="Department"
+                          android:layout_weight="80"
+                           />
+
+                    <EditText
+                        android:id="@+id/etDept"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10" 
+                        android:layout_weight="20"
+                        >
+
+<!--                         <requestFocus /> -->
+                    </EditText>
+                       </LinearLayout>
+                       
+                       
+                       <LinearLayout
+                           android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                           
+                           android:orientation="horizontal" >
+
+                                <TextView
+                          android:id="@+id/tnBlood"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="Blood Grp"
+                          android:layout_weight="80"
+                           />
+
+                    <EditText
+                        android:id="@+id/etBlood"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10" 
+                        android:layout_weight="20"
+                        >
+
+<!--                         <requestFocus /> -->
+                    </EditText>
+                       </LinearLayout>
+                       
+                       
+                       <LinearLayout
+                           android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                           
+                           android:orientation="horizontal" >
+
+                                <TextView
+                          android:id="@+id/tnMed"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="Medical Status"
+                          android:layout_weight="75"
+                           />
+
+                    <EditText
+                        android:id="@+id/etMed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10" 
+                        android:layout_weight="25"
+                        >
+
+<!--                         <requestFocus /> -->
+                    </EditText>
+                       </LinearLayout>
+                       
+                       <LinearLayout
+                           android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                           
+                           android:orientation="horizontal" >
+
+                                <TextView
+                          android:id="@+id/tnMar"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="Marital Status"
+                          android:layout_weight="80"
+                           />
+
+                    <EditText
+                        android:id="@+id/etMar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10" 
+                        android:layout_weight="20"
+                        >
+
+<!--                         <requestFocus /> -->
+                    </EditText>
+                       </LinearLayout>
+                       
+                       <LinearLayout
+                           android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                           
+                           android:orientation="horizontal" >
+
+                                <TextView
+                          android:id="@+id/tnRel"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="Relation"
+                          android:layout_weight="50"
+                           />
+
+                    <EditText
+                        android:id="@+id/etRel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10" 
+                        android:layout_weight="15"
+                        >
+
+<!--                         <requestFocus /> -->
+                    </EditText>
+                       </LinearLayout>
+                       
+                       <LinearLayout
+                           android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                           
+                           android:orientation="horizontal" >
+
+                                <TextView
+                          android:id="@+id/tnSecu"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="Security Remark"
+                          android:layout_weight="50"
+                           />
+
+                    <EditText
+                        android:id="@+id/etSecu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10" 
+                        android:layout_weight="15"
+                        >
+
+<!--                         <requestFocus /> -->
+                    </EditText>
+                       </LinearLayout>
+                       <LinearLayout
+                            android:layout_width="fill_parent"
+                           android:layout_height="wrap_content" 
+                           android:gravity="right"  >
+                    <Button
+        android:id="@+id/bnext"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+       
+        android:text="Next Search" />
+       </LinearLayout>
+                       </LinearLayout>
+                       </ScrollView>
+          </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" 
+                     android:orientation="vertical" >
+                       
+                  
+                         <ImageView
+                            android:id="@+id/ivImage"
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"
+                            android:layout_gravity="center"
+                            
+                            android:src="@drawable/splash_background" />
+                         
+                   
+                    
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                     android:orientation="vertical"  
+         android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+       tools:context=".Tabs"
+                       >
+                          <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.MapFragment" />
+         
+                     
+                </LinearLayout>
+               
+      </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>
